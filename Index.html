@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capture Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Data Capture Form</h2>
+        
+        <div class="camera-box">
+            <video id="videoFeed"></video>
+            <canvas id="photoCanvas" class="hidden"></canvas>
+            <div class="controls">
+                <button id="startCamera">Enable Camera</button>
+                <button id="captureBtn" class="hidden">Take Photo</button>
+            </div>
+        </div>
+
+        <form id="mainForm">
+            <input type="text" id="userInput" placeholder="Enter information" required>
+            <input type="hidden" id="photoData">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
